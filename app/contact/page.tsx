@@ -4,18 +4,13 @@ import { useState } from "react"
 import { motion } from "framer-motion"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { MapPin, Phone, Mail, Clock, Send, Instagram, Facebook, Twitter } from "lucide-react"
+import { Phone, Mail, Clock, Send, Instagram, Facebook, Twitter } from "lucide-react"
 
 const contactInfo = [
   {
-    icon: MapPin,
-    title: "Visit Our Store",
-    details: ["123 Heritage Lane", "Jewellery District", "Mumbai, Maharashtra 400001"],
-  },
-  {
     icon: Phone,
     title: "Call Us",
-    details: ["+91 98765 43210", "+91 22 1234 5678"],
+    details: ["+91 9600990802"],
   },
   {
     icon: Mail,
@@ -86,7 +81,7 @@ export default function ContactPage() {
       {/* Contact Info Cards */}
       <section className="py-12 lg:py-20 bg-secondary/30">
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {contactInfo.map((item, index) => (
               <motion.div
                 key={item.title}
@@ -260,29 +255,13 @@ export default function ContactPage() {
               )}
             </motion.div>
 
-            {/* Map & Social */}
+            {/* Social Links */}
             <motion.div
               initial={{ opacity: 0, x: 30 }}
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="space-y-8"
             >
-              {/* Map Placeholder */}
-              <div className="aspect-square lg:aspect-[4/3] bg-secondary border border-border relative overflow-hidden">
-                <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.8559786382195!2d72.82790237426877!3d18.93619985654867!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7d1c73a0d5cad%3A0xc70a25a7209c733c!2sZaveri%20Bazaar!5e0!3m2!1sen!2sin!4v1702847892381!5m2!1sen!2sin"
-                  width="100%"
-                  height="100%"
-                  style={{ border: 0 }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="RAVI HERITAGE Store Location"
-                />
-              </div>
-
-              {/* Social Links */}
               <div className="p-8 bg-secondary/50 border border-border">
                 <h3 className="text-lg font-medium text-primary tracking-wide mb-6">
                   Follow Us

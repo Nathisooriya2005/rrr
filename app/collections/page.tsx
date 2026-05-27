@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 import Image from "next/image"
 import { Navbar } from "@/components/navbar"
 import { Footer } from "@/components/footer"
-import { Star, ShoppingBag, Filter, X } from "lucide-react"
+import { Star, Filter, X } from "lucide-react"
 
 const categories = [
   "All",
@@ -15,6 +15,7 @@ const categories = [
   "Bangles",
   "Bridal",
   "Pendants",
+  "Gold",
 ]
 
 const products = [
@@ -74,20 +75,20 @@ const products = [
   },
   {
     id: 7,
-    name: "Traditional Necklace",
-    price: "₹15,999",
-    category: "Necklaces",
+    name: "Gold Chain Necklace",
+    price: "₹45,999",
+    category: "Gold",
     rating: 5,
-    image: "/images/hero-necklace.jpg",
-    tag: "Heritage",
+    image: "/images/gold-chain.jpg",
+    tag: "Premium",
   },
   {
     id: 8,
-    name: "Designer Ring",
-    price: "₹6,999",
-    category: "Rings",
-    rating: 4,
-    image: "/images/ring.jpg",
+    name: "Gold Bangle",
+    price: "₹38,999",
+    category: "Gold",
+    rating: 5,
+    image: "/images/gold-bangle.jpg",
     tag: "Exclusive",
   },
   {
@@ -267,12 +268,6 @@ export default function CollectionsPage() {
                         {product.tag}
                       </span>
                     </div>
-
-                    {/* Quick Add Button */}
-                    <button className="absolute bottom-4 left-4 right-4 py-3 bg-background/90 backdrop-blur-sm text-primary text-sm tracking-wider uppercase flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                      <ShoppingBag className="h-4 w-4" />
-                      Add to Cart
-                    </button>
                   </div>
 
                   {/* Product Info */}

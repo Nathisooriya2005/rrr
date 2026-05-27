@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import Image from "next/image"
-import { Star, ShoppingBag } from "lucide-react"
+import { Star } from "lucide-react"
 
 const products = [
   {
@@ -101,16 +101,6 @@ export function BestSellers() {
                       {product.tag}
                     </span>
                   </div>
-
-                  {/* Quick Add Button */}
-                  <motion.button
-                    initial={{ opacity: 0, y: 20 }}
-                    whileHover={{ scale: 1.05 }}
-                    className="absolute bottom-4 left-4 right-4 py-3 bg-background/90 backdrop-blur-sm text-primary text-sm tracking-wider uppercase flex items-center justify-center gap-2 opacity-0 group-hover:opacity-100 transition-opacity duration-300"
-                  >
-                    <ShoppingBag className="h-4 w-4" />
-                    Add to Cart
-                  </motion.button>
                 </div>
 
                 {/* Product Info */}

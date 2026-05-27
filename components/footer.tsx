@@ -1,7 +1,7 @@
 "use client"
 
 import Link from "next/link"
-import { Instagram, Facebook, Twitter, MapPin, Phone, Mail } from "lucide-react"
+import { Instagram, Facebook, Twitter, Phone, Mail } from "lucide-react"
 
 const footerLinks = {
   collections: [
@@ -58,12 +58,8 @@ export function Footer() {
             {/* Contact Info */}
             <div className="space-y-3">
               <div className="flex items-center gap-3 text-muted-foreground">
-                <MapPin className="h-4 w-4 text-accent" />
-                <span className="text-sm">123 Heritage Lane, Mumbai, India</span>
-              </div>
-              <div className="flex items-center gap-3 text-muted-foreground">
                 <Phone className="h-4 w-4 text-accent" />
-                <span className="text-sm">+91 98765 43210</span>
+                <span className="text-sm">+91 9600990802</span>
               </div>
               <div className="flex items-center gap-3 text-muted-foreground">
                 <Mail className="h-4 w-4 text-accent" />

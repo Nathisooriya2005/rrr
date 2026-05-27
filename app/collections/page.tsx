@@ -127,6 +127,42 @@ const products = [
     image: "/images/pendant.jpg",
     tag: "Delicate",
   },
+  {
+    id: 13,
+    name: "Gold Jhumka Earrings",
+    price: "₹32,999",
+    category: "Gold",
+    rating: 5,
+    image: "/images/gold-earring-1.jpg",
+    tag: "Traditional",
+  },
+  {
+    id: 14,
+    name: "Gold Drop Earrings",
+    price: "₹28,499",
+    category: "Gold",
+    rating: 5,
+    image: "/images/gold-earring-2.jpg",
+    tag: "Elegant",
+  },
+  {
+    id: 15,
+    name: "Gold Rope Chain",
+    price: "₹52,999",
+    category: "Gold",
+    rating: 5,
+    image: "/images/gold-chain-2.jpg",
+    tag: "Luxury",
+  },
+  {
+    id: 16,
+    name: "Gold Bangle Set",
+    price: "₹42,999",
+    category: "Gold",
+    rating: 5,
+    image: "/images/gold-bangle-2.jpg",
+    tag: "Heritage",
+  },
 ]
 
 export default function CollectionsPage() {
